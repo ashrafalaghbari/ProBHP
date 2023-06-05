@@ -1,7 +1,7 @@
 # ProFBHP: Intelligent FBHP Estimation and Analysis
 [![Made with Python](https://img.shields.io/badge/Made%20with-Python%203.10.7-blue.svg)](https://www.python.org/)
 ## Description
-ProFBHP is an AI-powered system for accurate flowing bottom hole pressure (FBHP) estimation and analysis in oil wells. It utilizes advanced machine learning and Explainable AI techniques to optimize production, monitor fluid movements, and assess reservoir performance. ProFBHP provides cost-effective solutions for FBHP estimation in single-phase and multiphase flow scenarios, overcoming the limitations of conventional methods. With superior accuracy and real-time monitoring, ProFBHP enhances wellbore management and production optimization.
+ProBHP is an AI-powered system for accurate flowing bottom hole pressure (FBHP) estimation and analysis in oil wells. It utilizes advanced machine learning and Explainable AI techniques to optimize production, monitor fluid movements, and assess reservoir performance. ProBHP provides cost-effective solutions for FBHP estimation in single-phase and multiphase flow scenarios, overcoming the limitations of conventional methods. With superior accuracy and real-time monitoring, ProBHP enhances wellbore management and production optimization.
 
 # Problem Statement & Motivation
 
@@ -23,9 +23,9 @@ To enhance the interpretability of the FBHP prediction model, I incorporated Exp
 
 The utilization of SHAP values allows me to interpret the results of the FBHP model accurately. It provides a transparent and understandable framework to comprehend the factors influencing FBHP and facilitates better decision-making in well operations.
 
-To test the project and explore the FBHP prediction model, you can access it at [insert testing platform or location]. This platform allows you to input relevant parameters and receive accurate FBHP predictions in real-time or for batch analysis, depending on your requirements. The integration of Explainable AI ensures that you can also access feature importance information, gaining valuable insights into the model's decision-making process and enhancing your understanding of FBHP dynamics in oil wells.
+This app allows you to input relevant parameters and receive accurate FBHP predictions in real-time or for batch analysis, depending on your requirements. The integration of Explainable AI ensures that you can also access feature importance information, gaining valuable insights into the model's decision-making process and enhancing your understanding of FBHP dynamics in oil wells.
 
-![fbhpwk](https://github.com/ashrafalaghbari/ProFBHP/assets/98224412/a6bd19e4-f99c-415e-98a4-3e2ddd820cb1)
+![fbhpwk](https://github.com/ashrafalaghbari/ProBHP/assets/98224412/a6bd19e4-f99c-415e-98a4-3e2ddd820cb1)
 
 # Installation
 
@@ -39,7 +39,7 @@ env\Scripts\activate.bat
 ```
 
 ```bash
-git clone https://github.com/ashrafalaghbari/ProFBHP.git
+git clone https://github.com/ashrafalaghbari/ProBHP.git
 cd project-directory
 pip install -r requirements.txt
 streamlit run app.py
@@ -79,11 +79,11 @@ Access the web application using the same URL as mentioned above.
 
 # License
 
-[MIT](https://github.com/ashrafalaghbari/ProFBHP/blob/main/LICENSE)
+[MIT](https://github.com/ashrafalaghbari/ProBHP/blob/main/LICENSE)
 
 
 # Contact
 
-If you have any questions or encounter any issues running this project, please feel free to [open an issue](https://github.com/ashrafalaghbari/ProFBHP/issues) or contact me directly at [ashrafalaghbari@hotmail.com](mailto:ashrafalaghbari@hotmail.com). I'll be happy to help!
+If you have any questions or encounter any issues running this project, please feel free to [open an issue](https://github.com/ashrafalaghbari/ProBHP/issues) or contact me directly at [ashrafalaghbari@hotmail.com](mailto:ashrafalaghbari@hotmail.com). I'll be happy to help!
 
 
