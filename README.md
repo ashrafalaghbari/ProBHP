@@ -17,6 +17,9 @@ In this project, I have developed a model capable of accurately predicting FBHP 
 
 The developed model has been successfully deployed and is capable of performing both online and batch predictions. This means that it can provide real-time FBHP estimates during ongoing operations, as well as handle large datasets for retrospective analysis. The deployment of the model enables continuous monitoring of FBHP and enhances decision-making in oil and gas well operations.
 
+![fbhp](https://github.com/ashrafalaghbari/ProBHP/assets/98224412/19523b40-765c-404c-a3df-7c2b4fe677e8)
+
+
 # Explainable AI and Feature Importance:
 
 To enhance the interpretability of the FBHP prediction model, I incorporated Explainable AI techniques using SHAP (SHapley Additive exPlanations) values. SHAP values provide insight into the contribution of each feature to the model's predictions. By understanding the feature importance, I gain valuable insights into why the model is making specific predictions.
