@@ -28,7 +28,8 @@ The utilization of SHAP values allows me to interpret the results of the FBHP mo
 
 This app allows you to input relevant parameters and receive accurate FBHP predictions in real-time or for batch analysis, depending on your requirements. The integration of Explainable AI ensures that you can also access feature importance information, gaining valuable insights into the model's decision-making process and enhancing your understanding of FBHP dynamics in oil wells.
 
-![fbhpwk](https://github.com/ashrafalaghbari/ProBHP/assets/98224412/a6bd19e4-f99c-415e-98a4-3e2ddd820cb1)
+![wkflow_bhp](https://github.com/ashrafalaghbari/ProBHP/assets/98224412/b15ea5c6-3c71-433b-9c07-f345021ad99a)
+
 
 # Installation
 
