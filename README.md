@@ -23,6 +23,8 @@ The developed model has been successfully deployed and is capable of performing 
 | Linear Regression & Decision Tree | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ashrafalaghbari/ProBHP/blob/main/notebooks/lr_dt.ipynb) |
 | FeedForwad Neural Network-Bayesian Optimization | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ashrafalaghbari/ProBHP/blob/main/notebooks/FFNN.ipynb) |
 
+![probhp](https://github.com/ashrafalaghbari/ProBHP/assets/98224412/ed09d777-7076-4b50-a016-7ed36c94e2b9)
+
 # Explainable AI and Feature Importance:
 
 To enhance the interpretability of the FBHP prediction model, I incorporated Explainable AI techniques using SHAP (SHapley Additive exPlanations) values. SHAP values provide insight into the contribution of each feature to the model's predictions. By understanding the feature importance, I gain valuable insights into why the model is making specific predictions.
