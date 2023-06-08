@@ -60,3 +60,4 @@ jobs:
             --region $REGION \
             --allow-unauthenticated \
             --quiet
+ 
