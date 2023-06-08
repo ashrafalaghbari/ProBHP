@@ -1,36 +1,13 @@
-# # Base image
-# FROM python:3.10.7
+# # Base image 
+FROM python:3.8-slim-buster
 
-# # Copy files
-# COPY . /FBHP_app
+# Set the working directory in the container
+WORKDIR /probhp
 
-# # Set working directory
-# WORKDIR /FBHP_app
+# Copy the dependencies file to the working directory
+COPY . .
+# Dont save the downloaded packages locally
+RUN pip install --no-cache-dir -r requirements.txt
 
-# # Install dependencies
-# RUN pip install -r requirements.txt
-
-# # Expose port
-# EXPOSE 8080
-
-# # # Start Streamlit app
-# ENTRYPOINT ["streamlit", "run", "app.py", "--server.port=8080", "--server.address=0.0.0.0"]
-
-# Base image
-FROM python:3.10.7
-
-# Copy files
-COPY . /FBHP_app
-
-# Set working directory
-WORKDIR /FBHP_app
-
-# Install dependencies
-RUN pip install -r requirements.txt
-
-# Start Streamlit app
-ENTRYPOINT ["streamlit", "run", "app.py", "--server.port=5000", "--server.address=0.0.0.0"]
-
-
-
- 
+# Set the command to run the Streamlit app
+CMD ["streamlit", "run", "app.py", "--server.port", "8080", "--server.address", "0.0.0.0"]
