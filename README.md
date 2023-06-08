@@ -16,8 +16,12 @@ To address the FBHP estimation problem, a dataset consisting of 206 data points 
 In this project, I have developed a model capable of accurately predicting FBHP using a Feedforward Neural Network (FFNN). To optimize the FFNN and obtain the optimal hyperparameters, I employed Bayesian optimization, which proved to be highly efficient in implementation. This approach allowed me to fine-tune the network and achieve superior performance in FBHP estimation.
 
 The developed model has been successfully deployed and is capable of performing both online and batch predictions. This means that it can provide real-time FBHP estimates during ongoing operations, as well as handle large datasets for retrospective analysis. The deployment of the model enables continuous monitoring of FBHP and enhances decision-making in oil and gas well operations.
+## View Notebooks in Colab
 
-![fbhp](https://github.com/ashrafalaghbari/ProBHP/assets/98224412/60759566-af6e-4361-bff5-d9c209977d74)
+| Notebook | Colab Link |
+| -------- | ---------- |
+| Linear Regression & Decision Tree | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ashrafalaghbari/ProBHP/blob/main/notebooks/lr_dt.ipynb) |
+| FeedForwad Neural Network-Bayesian Optimization | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ashrafalaghbari/ProBHP/blob/main/notebooks/FFNN.ipynb) |
 
 # Explainable AI and Feature Importance:
 
