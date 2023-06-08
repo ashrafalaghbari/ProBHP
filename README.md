@@ -54,7 +54,7 @@ http://localhost:8501
 ```
 Follow the instructions on the web application to use the project.
 
-If you prefer to use a Docker image, you can follow these additional steps:
+<!-- If you prefer to use a Docker image, you can follow these additional steps:
 
 Pull the Docker image from Docker Hub:
 ```bash
@@ -64,7 +64,7 @@ Run the Docker container:
 ```bash
 docker run -p 8501:8501 fbhpapp:0.1
 ```
-Access the web application using the same URL as mentioned above.
+Access the web application using the same URL as mentioned above. -->
 
 # References
 * [An Automated Flowing Bottom-Hole Pressure Prediction for a Vertical Well Having Multiphase Flow UsingComputational Intelligence Techniques](https://onepetro.org/SPESATS/proceedings-abstract/18SATS/All-18SATS/215548)
