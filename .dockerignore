@@ -1,3 +1,10 @@
+#files
+std.log
+notebooks
+EarlyStopPytorch.py
+.github/workflows/main.yml
+README.md
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -106,7 +113,7 @@ celerybeat.pid
 .venv
 env/
 venv/
-FBHPvenv/
+fbhpvenv/
 ENV/
 env.bak/
 venv.bak/
