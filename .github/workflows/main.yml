@@ -6,9 +6,9 @@ on:
         default: ''
 
 
-#   push:
-#     branches:
-#       - main
+  push:
+    branches:
+      - main
 
 env:
   PROJECT_ID: ${{ secrets.PROJECT_ID }}
@@ -50,7 +50,7 @@ jobs:
 
       - name: Push Docker image to GCR
         run: |-
-          docker push gcr.io/$PROJECT_ID/$IMAGE_NAMEE:$GIT_TAG
+          docker push gcr.io/$PROJECT_ID/$IMAGE_NAME:$GIT_TAG
           
       - name: Deploy
         run: |-
