@@ -1,0 +1,63 @@
+on:
+  workflow_dispatch:
+    inputs:
+      manual_run:
+        description: 'Manually trigger the workflow'
+        default: ''
+
+
+#   push:
+#     branches:
+#       - main
+
+env:
+  PROJECT_ID: ${{ secrets.PROJECT_ID }}
+  IMAGE_NAME: probhp
+  REGION: asia-southeast1
+  GIT_TAG: v0.1
+
+jobs:
+  Build-push-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v3
+        with:
+          python-version: 3.x
+
+      - name: Authenticate with Google Cloud
+        id: auth
+        uses: google-github-actions/auth@v1
+        with:
+          credentials_json: '${{ secrets.GCP_SA_KEY }}'
+
+      - name: Set up Cloud SDK
+        uses: google-github-actions/setup-gcloud@v1
+
+      - name: Use gcloud CLI
+        run: gcloud info
+
+      - name: Authorize Docker push
+        run: gcloud auth configure-docker --quiet
+
+      - name: Build and tag image
+        run: |-
+          docker build . --tag "gcr.io/$PROJECT_ID/$IMAGE_NAME:$GIT_TAG"
+
+      - name: Push Docker image to GCR
+        run: |-
+          docker push gcr.io/$PROJECT_ID/$IMAGE_NAMEE:$GIT_TAG
+          
+      - name: Deploy
+        run: |-
+          gcloud components install beta --quiet
+          gcloud beta run deploy $IMAGE_NAME --image gcr.io/$PROJECT_ID/$IMAGE_NAME:$GIT_TAG \
+            --project $PROJECT_ID \
+            --platform managed \
+            --region $REGION \
+            --allow-unauthenticated \
+            --quiet
