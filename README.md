@@ -92,6 +92,6 @@ Access the web application using the same URL as mentioned above. -->
 
 # Contact
 
-If you have any questions or encounter any issues running this project, please feel free to [open an issue](https://github.com/ashrafalaghbari/ProBHP/issues) or contact me directly at [ashrafalaghbari@hotmail.com](mailto:ashrafalaghbari@hotmail.com). I'll be happy to help!
+If you have any questions or encounter any issues running this project, please feel free to [open an issue](https://github.com/ashrafalaghbari/ProBHP/issues). I'll be happy to help!
 
 
