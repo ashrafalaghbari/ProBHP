@@ -1,3 +1,5 @@
+import warnings
+warnings.filterwarnings("ignore", message=".*The 'nopython' keyword.*")
 import streamlit as st
 from streamlit_shap import st_shap
 import pandas as pd
@@ -114,8 +116,6 @@ def instructions_page():
                     'Surface temperature', 'Bottom-hole temperature', 'Wellhead pressure',
                     'Tubing diameter'],
 
-        'Units': ['bbl/d', 'Mscf/day', 'bbl/day', 'ft', 'API', '°F', '°F', 'Psi', 'inche'],
-
         'Range': ['280.000 - 19618.000', '33.600 - 13562.200', '0.000 - 11000.000',
                     '4550.000 - 7100.000', '30.000 - 37.000', '76.000 - 160.000',
                         '157.000 - 215.000', '80.000 - 960.000',
@@ -199,16 +199,15 @@ def run():
      
 
         if add_selectbox == 'Online':
-
-            oil_rate = st.text_input('Oil Rate', value='')
-            gas_rate = st.text_input('Gas Rate', value='')
-            water_rate = st.text_input('Water Rate', value='')
-            depth = st.text_input('Depth', value='')
-            oil_gravity = st.text_input('Oil Gravity', value='')
-            stm = st.text_input('STM (Surface Temperature)', value='')
-            btm = st.text_input('BTM (Bottom-hole Temperature)', value='')
-            pwh = st.text_input('Wellhead Pressure', value='')
-            tubing_id_size = st.selectbox('Tubing ID Size', ['3.958', '3.813', '2.992', '2.441', '1.995'],
+            oil_rate = st.text_input('Oil Rate, bbl/d', value='')
+            gas_rate = st.text_input('Gas Rate, Mscf/day', value='')
+            water_rate = st.text_input('Water Rate, bbl/day', value='')
+            depth = st.text_input('Depth, ft', value='')
+            oil_gravity = st.text_input('Oil Gravity, API', value='')
+            stm = st.text_input('STM (Surface Temperature), °F', value='')
+            btm = st.text_input('BTM (Bottom-hole Temperature), °F', value='')
+            pwh = st.text_input('Wellhead Pressure, psi', value='')
+            tubing_id_size = st.selectbox('Tubing ID Size, inche', ['3.958', '3.813', '2.992', '2.441', '1.995'],
                                         index=0)
             # Create a dictionary to map the tubing ID sizes to binary values
             tubing_id_values = {'1.995': 0, '2.441': 0, '2.992':0, '3.813': 0, '3.958': 0}
